@@ -1,0 +1,13 @@
+server:
+  port: 9090
+  context-path: /springboot
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: hr
+    password: hr
+mybatis:
+  mapper-locations: classpath:com/baizhi/hjj/mapper/*Mapper.xml
+  type-aliases-package: com.baizhi.hjj.entity

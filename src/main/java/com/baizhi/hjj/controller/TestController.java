@@ -10,6 +10,8 @@ public class TestController {
 
     @RequestMapping("/test")
     public String Test() {
+        System.out.println("hehe");
+
         return "hello springboot";
     }
 }
